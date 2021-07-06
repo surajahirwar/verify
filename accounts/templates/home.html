@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+
+    {% block body %}
+
+    <div class="global-container" text-center>
+        <div class="card login-form">
+        <div class="card-body">
+           <h3 class="card-title text-center">Search your certificate {{request.user.username}}</h3>
+          
+         <form method="get" action="/search"class="my-2 my-lg-0 mx-3">
+            <input  class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" id="query">
+            <button class="btn btn-outline-success my-3 ml-5  text-center" type="submit">Search</button>
+          </form>
+         
+            </div>
+        </div>
+    </div>
+
+    
+
+    {% endblock body %}
